@@ -1,5 +1,5 @@
 QT       += core gui sql multimedia serialport
-QT       += core gui sql network
+QT       += core gui sql network printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -45,7 +45,10 @@ SOURCES += \
     mailing/quotedprintable.cpp \
     mailing/smtpclient.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    Employe.cpp \
+    qcustomplot.cpp \
+    Moetaz.cpp
 
 HEADERS += \
     acceuil.h \
@@ -77,7 +80,10 @@ HEADERS += \
     mailing/quotedprintable.h \
     mailing/smtpclient.h \
     mailing/smtpexports.h \
-    mainwindow.h
+    mainwindow.h \
+    Employe.h \
+    qcustomplot.h \
+    Moetaz.h
 
 FORMS += \
     acceuil.ui \
@@ -88,7 +94,9 @@ FORMS += \
     dhafer/modif.ui \
     dhafer/modification.ui \
     dhafer/modifier.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    Moetaz.ui
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

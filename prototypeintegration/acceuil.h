@@ -1,5 +1,6 @@
 #ifndef ACCEUIL_H
 #define ACCEUIL_H
+#include "Employe.h"
 
 #include <QDialog>
 
@@ -28,6 +29,8 @@ private slots:
 
 private:
     Ui::acceuil *ui;
+    Employe tmpetudiant;
+
 };
 
 #endif // ACCEUIL_H

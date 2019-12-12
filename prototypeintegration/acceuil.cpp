@@ -3,6 +3,8 @@
 #include "dhafer.h"
 #include "chedli.h"
 #include "amine.h"
+#include "Moetaz.h"
+#include "ui_Employe.h"
 acceuil::acceuil(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::acceuil)
@@ -35,9 +37,13 @@ void acceuil::on_voyage_clicked()
 
 void acceuil::on_employes_clicked()
 {
-    ui->selection->move(0,256);
-}
 
+    ui->selection->move(0,256);
+
+    Moetaz mo;
+
+mo.exec();
+}
 void acceuil::on_centres_clicked()
 {
     ui->selection->move(0,297);
